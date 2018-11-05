@@ -1,0 +1,6 @@
+framework module PEPReaderSDK {
+  umbrella header "PEPReaderSDK.h"
+
+  export *
+  module * { export * }
+}
