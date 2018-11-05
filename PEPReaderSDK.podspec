@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
 # SSZipArchive库为强依赖，此处经对接方项目特殊要求才注释掉
 #  s.dependency 'SSZipArchive'
 
-  s.dependency 'PEPBigData', :git => 'https://github.com/PEPDigitalPublishing/PEPBigData.git'
-  s.dependency 'PEPNetworking', :git => 'https://github.com/PEPDigitalPublishing/PEPNetworking.git'
+#   s.dependency 'PEPBigData', :git => 'https://github.com/PEPDigitalPublishing/PEPBigData.git'
+#   s.dependency 'PEPNetworking', :git => 'https://github.com/PEPDigitalPublishing/PEPNetworking.git'
 
 #  此处为讯飞语音SDK，可以不从该地址下载，但是必须保证项目中存在iflyMSC.framework
 #  s.dependency 'PEPiFlyMSC', :git => 'https://github.com/PEPDigitalPublishing/PEPiFlyMSC.git'
