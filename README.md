@@ -72,3 +72,7 @@ pod 'PEPReaderSDK', { :git => 'https://github.com/PEPDigitalPublishing/PEPReader
 #### 1. Include of non-modular header inside framework module xxxxxx
 
 在项目的`Build Setting`中搜索“allow non-modular”，将出现的栏目中的“No”改为“Yes”
+
+#### 2. 正在完善中...
+
+
