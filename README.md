@@ -46,7 +46,7 @@ pod 'PEPReaderSDK', { :git => 'https://github.com/PEPDigitalPublishing/PEPReader
 
 ## 接口说明
 
-详见`PEPReaderSDK.framework`中Headers代码注释。
+详见`PEPReaderSDK.framework`Headers中代码注释。
 
 
 
