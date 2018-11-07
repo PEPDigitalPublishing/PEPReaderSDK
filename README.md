@@ -4,17 +4,17 @@
 
 ## 系统要求
 
-由于依赖的福昕SDK已经升级到`iOS9.0`+，故人教点读SDK兼容的最低版本为`iOS 9.0`。
+由于依赖的福昕RDK已经升级到`iOS9.0`+，故人教点读SDK兼容的最低版本为`iOS 9.0`。
 
 
 ## 使用说明
 
-由于人教点读SDK依赖的福昕SDK文件较大，无法上传GitHub，可以[点击这里](http://rjddresw.mypep.cn/xueln/FoxitRDK.framework_v6.1.zip)下载。
+由于人教点读SDK依赖的福昕RDK文件较大，无法上传GitHub，可以[点击这里](http://rjddresw.mypep.cn/xueln/FoxitRDK.framework_v6.1.zip)下载。
 
 
 ### 接入
 
-#### 一、Cocoapods
+#### 方式一、Cocoapods
 
 在`podfile`中添加如下代码，然后`pod install`:
 
@@ -41,7 +41,7 @@ pod 'PEPReaderSDK', { :git => 'https://github.com/PEPDigitalPublishing/PEPReader
 
 
 
-#### 二、手动接入
+#### 方式二、手动接入
 
 1. 从[Releases](https://github.com/PEPDigitalPublishing/PEPReaderSDK/releases)中下载指定版本，然后将其中的`PEPReaderSDK.framework`和`PDFReaderSDKDiandu.xcassets`导入项目中。
 2. 查看[PEPReaderSDK.podspec](https://github.com/PEPDigitalPublishing/PEPReaderSDK/blob/master/PEPReaderSDK.podspec)中声明的依赖库，并保证这些依赖库也同样导入到项目中
@@ -77,13 +77,13 @@ pod 'PEPReaderSDK', { :git => 'https://github.com/PEPDigitalPublishing/PEPReader
 
 在项目的`Build Setting`中搜索“allow non-modular”，将出现的栏目中的“No”改为“Yes”
 
-#### 2. 福昕SDK的导入位置
+#### 2. 福昕RDK的导入位置
 
 FoxitRDK.framework应导入到`Embedded Binaries`中，而不是`Linked Frameworks And Libraries`中
 
 #### 3. App打包上传App Store时报错(ERROR ITMS-90080、90087、90209、90125)
 
-由于福昕SDK合并了真机和模拟器的二进制文件，即在真机和模拟器上都能运行，且是以嵌入的方式（Embedded Binaries）导入项目的，故而Xcode在打包时无法自动去除x86_64和i386的二进制文件，需要增加脚本。
+由于福昕RDK合并了真机和模拟器编译出的二进制文件，即在真机和模拟器上都能运行，且是以嵌入的方式（Embedded Binaries）导入项目的，故而Xcode在打包时无法自动去除x86_64和i386的二进制文件，需要增加脚本。
 
 解决方案: `TARGETS` -> `Build Phases` -> 点击左上角加号选择`New Run Script Phase`-> 然后复制粘贴下面代码:
 
