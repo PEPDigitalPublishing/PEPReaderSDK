@@ -18,7 +18,7 @@
 
 在`podfile`中添加如下代码，然后`pod install`:
 
-```Objective-C
+```
 pod 'PEPReaderSDK', :git => 'https://github.com/PEPDigitalPublishing/PEPReaderSDK.git'
 
 pod 'PEPNetworking', :git => 'https://github.com/PEPDigitalPublishing/PEPNetworking.git'

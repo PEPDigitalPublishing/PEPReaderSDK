@@ -50,7 +50,8 @@
 
 
 /**
- 配置正式或者测试环境。此方法需要在setAppKey:之前调用
+ 配置正式或者测试环境。此方法需要在setAppKey:之前调用。
+ 人教点读SDK目前对外只提供一个域名，以AppKey来区分正式环境和测试环境，故而此接口只需传入true即可。
 
  @param isRelease true为正式环境，false为测试环境
  */
