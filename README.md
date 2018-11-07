@@ -10,7 +10,7 @@
 
 ### 接入
 
-#### Cocoapods
+#### 一、Cocoapods
 
 在`podfile`中添加如下代码，然后`pod install`:
 
@@ -37,7 +37,7 @@ pod 'PEPReaderSDK', { :git => 'https://github.com/PEPDigitalPublishing/PEPReader
 
 
 
-#### 手动接入
+#### 二、手动接入
 
 1. 从[Releases](https://github.com/PEPDigitalPublishing/PEPReaderSDK/releases)中下载指定版本，然后将其中的`PEPReaderSDK.framework`和`PDFReaderSDKDiandu.xcassets`导入项目中。
 2. 查看[PEPReaderSDK.podspec](https://github.com/PEPDigitalPublishing/PEPReaderSDK/blob/master/PEPReaderSDK.podspec)中声明的依赖库，并保证这些依赖库也同样导入到项目中
