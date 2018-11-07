@@ -134,11 +134,13 @@ done
 
 ```
 
-操作如下如：
+操作如下图：
 
 ![Run Script](https://github.com/PEPDigitalPublishing/PEPImageHost/raw/master/PEPReaderSDK/run_script.png)
 
 
 #### 4. 正在完善中...
+
+对接中出现的任何问题，欢迎随时反馈（lipz@pep.com.cn），或者提[Issues](https://github.com/PEPDigitalPublishing/PEPReaderSDK/issues).
 
 
