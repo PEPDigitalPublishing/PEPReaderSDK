@@ -81,7 +81,7 @@ pod 'PEPReaderSDK', { :git => 'https://github.com/PEPDigitalPublishing/PEPReader
 
 FoxitRDK.framework应导入到`Embedded Binaries`中，而不是`Linked Frameworks And Libraries`中
 
-#### 3. App打包上传App Store时报错
+#### 3. App打包上传App Store时报错(ERROR ITMS-90080、90087、90209、90125)
 
 由于福昕SDK合并了真机和模拟器的二进制文件，即在真机和模拟器上都能运行，且是以嵌入的方式（Embedded Binaries）导入项目的，故而Xcode在打包时无法自动去除x86_64和i386的二进制文件，需要增加脚本。
 
