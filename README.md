@@ -58,7 +58,8 @@ pod 'PEPReaderSDK', { :git => 'https://github.com/PEPDigitalPublishing/PEPReader
 
 ## 更新日志
 
-~~请参考：[更新说明]() ~~
+~~请参考：[更新说明]()~~
+
 *暂无*
 
 
