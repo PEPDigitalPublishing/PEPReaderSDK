@@ -9,7 +9,7 @@
 
 ## 使用说明
 
-由于人教点读SDK依赖的福昕SDK文件较大，无法上传GitHub，故而需要联系我们(xueln@pep.com.cn、lipz@pep.com.cn)单独发送文件。
+由于人教点读SDK依赖的福昕SDK文件较大，无法上传GitHub，可以[点击这里](http://rjddresw.mypep.cn/xueln/FoxitRDK.framework_v6.1.zip)下载。
 
 
 ### 接入
