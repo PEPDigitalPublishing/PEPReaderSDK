@@ -52,14 +52,14 @@ pod 'PEPReaderSDK', { :git => 'https://github.com/PEPDigitalPublishing/PEPReader
 
 ## Demo
 
-[这里]()是Demo地址。
+[这里](https://github.com/PEPDigitalPublishing/PDFReaderSample)是Demo地址。
 
 
 
 ## 更新日志
 
-请参考：[更新说明]()
-
+~~请参考：[更新说明]() ~~
+*暂无*
 
 
 
