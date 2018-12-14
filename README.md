@@ -25,6 +25,10 @@ pod 'PEPNetworking', :git => 'https://github.com/PEPDigitalPublishing/PEPNetwork
 
 pod 'PEPBigData', :git => 'https://github.com/PEPDigitalPublishing/PEPBigData.git'
 
+# 讯飞语音SDK
+pod 'PEPiFlyMSC', :git => 'https://github.com/PEPDigitalPublishing/PEPiFlyMSC.git'
+
+
 pod 'SSZipArchive'
 
 ```
