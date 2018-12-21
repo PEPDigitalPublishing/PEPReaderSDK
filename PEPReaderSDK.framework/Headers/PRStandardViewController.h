@@ -15,7 +15,7 @@
 
 /**
  工具栏上的按钮被点击的时候将回调该block.
- 其中，selected只有单句重复、点读区域、翻译这几个有开关概念的item会为true，表示开，其余按钮均只有false一种状态.
+ 其中，selected只有点读区域、翻译这两个个有开关概念的item会为true，表示开，其余按钮均只有false一种状态.
  */
 @property (nonatomic, copy) void(^toolBarItemDidSelected)(PRToolBarItemType type, BOOL selected);
 

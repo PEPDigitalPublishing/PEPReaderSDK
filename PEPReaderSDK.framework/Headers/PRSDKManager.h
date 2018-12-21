@@ -14,12 +14,30 @@
 
 
 /**
+ 配置正式或者测试环境。此方法需要在setAppKey:之前调用。
+ 人教点读SDK目前对外只提供一个域名，以AppKey来区分正式环境和测试环境，故而此接口只需传入true即可。
+ 
+ @param isRelease true为正式环境，false为测试环境
+ */
++ (void)configServerMode:(BOOL)isRelease;
+
+
+/**
  SDK认证: 建议在AppDelegate中配置。
  SDK中有网络请求的接口均需要AppKey参数，因此此方法请务必调用并传入正确参数，否则其他接口可能无法正常获取数据
 
 @param appKey 对接时分配的appKey，用于区别不同的对接平台
 */
 + (void)setAppKey:(NSString *)appKey;
+
+
+
+/**
+ 设置评测引擎类型：默认在线讯飞
+ 
+ @param type 详见 FOLLOW_ENGINE_TYPE 枚举
+ */
++ (void)setEvaluateEngineType:(PREvaluateEngineType)type;
 
 
 /**
@@ -47,15 +65,6 @@
  @param on 设置为true时阅读器页面某些事件将会有震动反馈：仅iPhone 7及以上具有线性马达的手机有此功能
  */
 + (void)setShakeFeedbackSwitch:(BOOL)on;
-
-
-/**
- 配置正式或者测试环境。此方法需要在setAppKey:之前调用。
- 人教点读SDK目前对外只提供一个域名，以AppKey来区分正式环境和测试环境，故而此接口只需传入true即可。
-
- @param isRelease true为正式环境，false为测试环境
- */
-+ (void)configServerMode:(BOOL)isRelease;
 
 
 /**
@@ -94,7 +103,7 @@
 
 /**
  当前设备的UUID.
- 取值为：[UIDevice currentDevice].identifierForVendor.UUIDString。取值会存入keyChain，不会随App卸载而丢失。
+ 取值为：UIDevice.currentDevice.identifierForVendor.UUIDString。取值会存入keyChain，不会随App卸载而丢失。
  */
 + (NSString *)currentDeviceUUID;
 

@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ISEResult.h>
-#import <ISEResultSentence.h>
-#import <ISEResultWord.h>
+#import "PREvaluateResult.h"
+
 
 @class PRWordInfoModel;
 
@@ -107,7 +106,8 @@
 @property (nonatomic, copy) NSString *recordPath;
 
 /** 每次测评得分数组 */
-@property (nonatomic, strong) NSMutableArray<ISEResult *> *scores;
+@property (nonatomic, strong) NSMutableArray<PREvaluateResult *> *scores;
+
 
 /** 测评句子所属测评组的ID：每一个对话场景或一篇课文为一个测评组 */
 @property (nonatomic, copy) NSString *groupID;

@@ -17,6 +17,13 @@ typedef NS_ENUM(NSUInteger, PRBookAuth) {
 };
 
 
+/** 评测引擎类型 */
+typedef NS_ENUM(NSUInteger, PREvaluateEngineType) {
+    PREvaluateEngineTypeXunFei,             /// 默认讯飞引擎
+    PREvaluateEngineTypeYiQi,               /// 一起作业语音引擎
+};
+
+
 
 /**
  播放类型
@@ -44,6 +51,7 @@ typedef NS_ENUM(NSUInteger, PRPlayingType) {
  - PRToolBarItemTypeContinue: 连读
  - PRToolBarItemTypeEvaluate: 评测
  - PRToolBarItemTypeSetting: 设置
+ - PRToolBarItemTypeKnowledge: 知识讲解
  */
 typedef NS_ENUM(NSUInteger, PRToolBarItemType) {
     PRToolBarItemTypeBack           = 1000,
@@ -52,7 +60,9 @@ typedef NS_ENUM(NSUInteger, PRToolBarItemType) {
     PRToolBarItemTypeContinue,
     PRToolBarItemTypeEvaluate,
     PRToolBarItemTypeSetting,
+    PRToolBarItemTypeKnowledge,
 };
+
 
 
 

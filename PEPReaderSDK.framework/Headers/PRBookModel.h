@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+/** 学科 */
+typedef NS_ENUM(NSUInteger, PRBookSubject) {
+    /// 未知。默认
+    PRBookSubjectUnknow         = 0,
+    /// 语文
+    PRBookSubjectChinese        = 11,
+    /// 英语
+    PRBookSubjectEnglish        = 12,
+    /// 数学
+    PRBookSubjectMath           = 21,
+};
+
 // MARK: - PRBookModel
 
 @interface PRBookModel : NSObject
@@ -65,6 +77,10 @@
 
 /** 扉页中特殊前缀开头页面是从第几页开始的（相对于100x页面的页码偏移，比如若S1的页码为1005，那么该参数的值就为5） */
 @property (nonatomic, assign) NSInteger titleOffset;
+
+/** 学科 */
+@property (nonatomic, assign) PRBookSubject subject_id;
+
 
 
 // MARK: - Readonly
