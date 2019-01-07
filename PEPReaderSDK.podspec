@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   s.name         = 'PEPReaderSDK'
 
-  s.version      = '2.0.0'
+  s.version      = '2.0.1'
 
   s.summary      = '人教点读新SDK'
 
