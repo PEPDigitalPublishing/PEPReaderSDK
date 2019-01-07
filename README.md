@@ -63,15 +63,13 @@ pod 'PEPReaderSDK', { :git => 'https://github.com/PEPDigitalPublishing/PEPReader
 
 
 
-## 更新日志
+## 更新说明
 
-~~请参考：[更新说明]()~~
+请参考：[更新日志](https://github.com/PEPDigitalPublishing/PEPReaderSDK/wiki/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97)
 
-*暂无*
+如果想及时收到人教点读SDK更新的通知，可以点击页面右上角的`Watch`，然后在出现的下拉列表中勾选`Releases only`。这样SDK每发布一个新的release版本，你将会收到GitHub发送的邮件。
 
-
-
-
+![Github_Watch](https://github.com/PEPDigitalPublishing/PEPImageHost/raw/master/PEPReaderSDK/github_watch.png)
 
 
 ## FAQ
