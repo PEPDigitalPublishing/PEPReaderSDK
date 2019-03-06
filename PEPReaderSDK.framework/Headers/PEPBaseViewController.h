@@ -79,7 +79,14 @@ typedef NS_ENUM(NSUInteger, PEPRequestDataStatus) {
 
 - (void)showAlertWithMessage:(NSString *)message sureHandle:(void (^)(void))sureHandle;
 
-
+- (void)showActionSheetWithSourceView:(UIView *)sourceView
+                                title:(NSString *)title
+                         message:(NSString *)message
+                     cancelTitle:(NSString *)cancelActionTitle
+                firstActionTitle:(NSString *)firstActionTitle
+               secondActionTitle:(NSString *)secondActionTitle
+               firstActionHandle:(void (^)(void))firstActionHandle
+              secondActionHandle:(void (^)(void))secondActionHandle;
 
 
 // MARK: - Cover View
