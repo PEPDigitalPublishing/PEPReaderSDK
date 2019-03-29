@@ -81,6 +81,10 @@ typedef NS_ENUM(NSUInteger, PRBookSubject) {
 /** 学科 */
 @property (nonatomic, assign) PRBookSubject subject_id;
 
+/** 教材中一共有多少个音频锚点 */
+@property (nonatomic, assign) NSInteger total_words;
+
+
 
 
 // MARK: - Readonly

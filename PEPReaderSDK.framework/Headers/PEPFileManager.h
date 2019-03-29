@@ -56,7 +56,7 @@
 
 
 
-// MARK: - 已下载书本
+// MARK: - 已下载教材
 
 /**
  获取所有已下载书列表
@@ -76,8 +76,8 @@
 /**
  删除指定已下载书
 
- @param bookID 书本ID
- @return 是否删除成功。只有删除失败时返回false，删除成功和书本不存在都会返回true
+ @param bookID 教材ID
+ @return 是否删除成功。只有删除失败时返回false，删除成功和教材不存在都会返回true
  */
 - (BOOL)deleteDownlodedBookWithBookID:(NSString *)bookID;
 
@@ -93,7 +93,7 @@
 // MARK: - 在线阅读
 
 /**
- 计算所有在线阅读书本缓存大小
+ 计算所有在线阅读教材缓存大小
 
  @return size(byte)
  */
@@ -103,14 +103,14 @@
 /**
  计算指定书的在线阅读缓存大小
 
- @param bookID 书本ID
+ @param bookID 教材ID
  @return size(byte)
  */
 - (long long)sizeOfOnlineBookCacheWithBookID:(NSString *)bookID;
 
 
 /**
- 清除所有在线阅读书本缓存
+ 清除所有在线阅读教材缓存
 
  @return 是否清除成功
  */
@@ -118,9 +118,9 @@
 
 
 /**
- 清除指定书本在线阅读缓存
+ 清除指定教材在线阅读缓存
 
- @param bookID 书本ID
+ @param bookID 教材ID
  @return 是否清除成功
  */
 - (BOOL)clearOnlineBookCacheWithBookID:(NSString *)bookID;

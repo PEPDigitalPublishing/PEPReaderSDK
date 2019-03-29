@@ -35,7 +35,7 @@
 /**
  设置评测引擎类型：默认在线讯飞
  
- @param type 详见 FOLLOW_ENGINE_TYPE 枚举
+ @param type 详见 PREvaluateEngineType 枚举
  */
 + (void)setEvaluateEngineType:(PREvaluateEngineType)type;
 
