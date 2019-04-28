@@ -18,7 +18,8 @@
 
 @protocol PRViewControllerDelegate<NSObject>
 
-@required
+//@required
+@optional
 
 /**
  体验模式结束，用户点击了“立即购买”按钮后将回调该代理方法
@@ -27,8 +28,12 @@
  */
 - (void)needPayWithBookModel:(PRBookModel *)bookModel;
 
-
-@optional
+/**
+ 体验模式结束时，将首先回调该方法。
+ 若对接方实现了该方法，则需要自己定制体验模式结束、引导用户购买的弹窗，「- (void)needPayWithBookModel:(PRBookModel *)bookModel」方法将不再回调；
+ 若对接方未实现该方法，则使用SDK内部默认的提示用户购买弹窗，「- (void)needPayWithBookModel:(PRBookModel *)bookModel」将会被回调。
+ */
+- (void)experienceDidEnded:(PRViewController *)vc bookModel:(PRBookModel *)bookModel;
 
 /**
  播放类型已经改变时将会回调该代理方法
