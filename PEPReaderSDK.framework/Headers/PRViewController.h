@@ -37,7 +37,7 @@
 
 /**
  播放类型已经改变时将会回调该代理方法
-
+ 
  @param playingType 播放类型，详见 PRPlayingType 枚举
  */
 - (void)playingTypeDidChanged:(PRPlayingType)playingType;
@@ -84,6 +84,9 @@
 /** 当前页码 */
 @property (nonatomic, assign, readonly) NSInteger currentPage;
 
+/** 当前页码所在目录节点ID。英语教材目录只有一级，此参数即为unitID；语文教材目录有多级，此参数为目录最深一层级的ID */
+@property (nonatomic, copy, readonly) NSString *currentUnitID;
+
 
 // MARK: - Readwrite Property
 
@@ -99,7 +102,7 @@
 
 /**
  初始化方法
-
+ 
  @param bookID 教材ID
  @param pageIndex 需要跳转的页码: 传0或者使用不包含该参数的方法，阅读器将会自动根据记录的阅读进度进行跳转(仅已购买教材会记录阅读进度)
  @param purchase 是否已购买：true为已购买，阅读无限制；false为体验模式，仅可阅读前5页。默认为false
@@ -118,7 +121,7 @@
 
 /**
  更新教材的购买状态。如需在阅读器打开的过程中更改书本状态（如已购买），则可调用此方法修改。
-
+ 
  @param purchase 是否已购买：true为已购买，阅读无限制；false为体验模式，仅可阅读前5页
  */
 - (void)updateBookPurchaseState:(BOOL)purchase;
@@ -128,7 +131,7 @@
 
 /**
  跳转到指定页
-
+ 
  @param page 页码
  @param animated 是否需要动画
  */
@@ -158,7 +161,7 @@
 /**
  阅读器需要关闭时（如pop按钮被点击）请务必调用此方法，否则controller将无法被释放。
  此方法调用后会自动关闭阅读器。
-
+ 
  @param animated 是否需要动画
  */
 - (void)cleanupAndCloseForReaderWithAnimated:(BOOL)animated;
@@ -174,7 +177,7 @@
 
 /**
  可点读热区开关
-
+ 
  @param on 为true时显示热区，false时不主动显示（点读过程中会显示当前播放句子的热区）
  */
 - (void)needShowHotspots:(BOOL)on;
@@ -182,7 +185,7 @@
 
 /**
  在点读时显示翻译内容：仅英语课本有效
-
+ 
  @param on 为true时显示翻译内容
  */
 - (void)needShowTranslateOnReading:(BOOL)on;
@@ -191,7 +194,7 @@
 
 /**
  设置点读音频的播放速度（语速）
-
+ 
  @param rate 播放速度，默认1.0。速度范围：0.5 ~ 2.0
  */
 - (void)setPlayingRate:(CGFloat)rate;
@@ -199,7 +202,7 @@
 
 /**
  改变播放类型
-
+ 
  @param type 支持的类型：详见 PRPlayingType 枚举类型
  */
 - (BOOL)changePlayingType:(PRPlayingType)type;
