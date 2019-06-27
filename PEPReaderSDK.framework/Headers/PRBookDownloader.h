@@ -38,7 +38,7 @@
 /**
  获取下载队列中的所有下载实例
  */
-+ (NSArray<PEPDownloadOperation *> *)downloadBookList;
++ (NSArray<PEPDownloadOperation *> *)downloadedBookList;
 
 
 /**

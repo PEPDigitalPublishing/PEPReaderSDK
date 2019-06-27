@@ -52,6 +52,7 @@ typedef NS_ENUM(NSUInteger, PRPlayingType) {
  - PRToolBarItemTypeEvaluate: 评测
  - PRToolBarItemTypeSetting: 设置
  - PRToolBarItemTypeKnowledge: 知识讲解
+ - PRToolBarItemTypeSkip: 跳转（仅iPad有此项）
  */
 typedef NS_ENUM(NSUInteger, PRToolBarItemType) {
     PRToolBarItemTypeBack           = 1000,
@@ -61,6 +62,7 @@ typedef NS_ENUM(NSUInteger, PRToolBarItemType) {
     PRToolBarItemTypeEvaluate,
     PRToolBarItemTypeSetting,
     PRToolBarItemTypeKnowledge,
+    PRToolBarItemTypeSkip,
 };
 
 

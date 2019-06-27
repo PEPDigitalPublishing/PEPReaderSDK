@@ -31,6 +31,8 @@ typedef NS_ENUM(NSUInteger, PEPRequestDataStatus) {
 /**导航栏最下方的分割线*/
 @property (nonatomic, weak, readonly) UIView *navigationBarSeparatorView;
 
+@property (nonatomic, assign, readonly) UIEdgeInsets safeAreaInsets;
+
 
 /**
  设置状态栏颜色: 如需改变页面的状态栏颜色，可通过该方法在viewWillAppear中设置，别忘记在viewWillDisappear中还原
@@ -64,6 +66,9 @@ typedef NS_ENUM(NSUInteger, PEPRequestDataStatus) {
 
 /** progress: 0 ~ 1 */
 - (void)showLoadingViewProgress:(CGFloat)progress;
+
+- (void)showLoadingViewWithTitle:(NSString *)title;
+
 
 - (void)hideLoadingView;
 

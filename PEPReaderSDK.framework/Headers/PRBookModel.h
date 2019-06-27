@@ -24,8 +24,10 @@ typedef NS_ENUM(NSUInteger, PRBookSubject) {
 
 @interface PRBookModel : NSObject
 
-/** 资源+教材PDF包下载地址 */
+/** 资源+教材PDF包（离线包）下载地址 */
 @property (nonatomic, copy) NSString *download_url;
+/** 高清版资源+教材PDF包（离线包）下载地址 */
+@property (nonatomic, copy) NSString *download_url_hd;
 
 /** 教材版本 */
 @property (nonatomic, copy) NSString *version;
@@ -35,6 +37,8 @@ typedef NS_ENUM(NSUInteger, PRBookSubject) {
 
 /** 教材大小 */
 @property (nonatomic, assign) double size;
+/** 高清版教材大小 */
+@property (nonatomic, assign) double size_hd;
 
 /** 教材封面缩略图地址 */
 @property (nonatomic, copy) NSString *icon_url;
@@ -59,6 +63,8 @@ typedef NS_ENUM(NSUInteger, PRBookSubject) {
 
 /** 教材PDF下载地址 */
 @property (nonatomic, copy) NSString *book_url;
+/** 高清版教材PDF下载地址（iPad会自动使用该参数） */
+@property (nonatomic, copy) NSString *book_url_hd;
 
 /** 正文开始页码 */
 @property (nonatomic, assign) NSUInteger ex_pages;
@@ -100,6 +106,9 @@ typedef NS_ENUM(NSUInteger, PRBookSubject) {
 
 /** 是否在下载中 */
 @property (nonatomic, assign, readonly, getter=isDownloading) BOOL downloading;
+
+/** 已下载教材的PDF路径，未下载时该属性为nil */
+@property (nonatomic, copy, readonly) NSString *downloadedPDFPath;
 
 
 @end
