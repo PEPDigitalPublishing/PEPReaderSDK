@@ -9,7 +9,7 @@
 
 ## 使用说明
 
-由于人教点读SDK依赖的福昕RDK文件较大，无法上传GitHub，可以[点击这里](http://rjddresw.mypep.cn/xueln/FoxitRDK.framework_v6.1.zip)下载，然后将解压出的`FoxitRDK.framework`导入到项目中。
+由于人教点读SDK依赖的福昕RDK文件较大，无法上传GitHub，可以[点击这里](https://rjszgsres.mypep.cn/rjdd/iOSFoxitRDK/FoxitRDK.framework.zip)下载，然后将解压出的`FoxitRDK.framework`导入到项目中。
 
 
 ### 接入
