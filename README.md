@@ -9,7 +9,7 @@
 
 ## 使用说明
 
-由于人教点读SDK依赖的福昕RDK文件较大，无法上传GitHub，可以[点击这里](http://rjddresw.mypep.cn/xueln/FoxitRDK.framework_v6.1.zip)下载，然后将解压出的`FoxitRDK.framework`导入到项目中。
+由于人教点读SDK依赖的福昕RDK文件较大，无法上传GitHub，可以[点击这里](http://rjddresw.mypep.cn/xueln/FoxitRDK.framework_v7.0.zip)下载，然后将解压出的`FoxitRDK.framework`导入到项目中。
 
 
 ### 接入
@@ -80,11 +80,11 @@ pod 'PEPReaderSDK', { :git => 'https://github.com/PEPDigitalPublishing/PEPReader
 
 #### 2. 福昕RDK的导入位置
 
-FoxitRDK.framework应导入到`Embedded Binaries`中，而不是`Linked Frameworks And Libraries`中
+`FoxitRDK.framework`是动态库，应导入到`Embedded Binaries`中，而不是`Linked Frameworks And Libraries`中
 
 #### 3. App打包上传App Store时报错(ERROR ITMS-90080、90087、90209、90125)
 
-由于福昕RDK合并了真机和模拟器编译出的二进制文件，即在真机和模拟器上都能运行，且是以嵌入的方式（Embedded Binaries）导入项目的，故而Xcode在打包时无法自动去除x86_64和i386的二进制文件，需要增加脚本。
+由于`FoxitRDK.framework`合并了真机和模拟器编译出的二进制文件，即在真机和模拟器上都能运行，且是动态库，以嵌入的方式（Embedded Binaries）导入项目的，故而Xcode在打包时无法自动去除x86_64和i386的二进制文件，需要增加脚本。
 
 解决方案: `TARGETS` -> `Build Phases` -> 点击左上角加号选择`New Run Script Phase`-> 然后复制粘贴下面代码:
 

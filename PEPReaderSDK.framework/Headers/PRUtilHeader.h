@@ -30,7 +30,7 @@ typedef NS_ENUM(NSUInteger, PREvaluateEngineType) {
 
  - PRPlayingTypeDefault: 点读
  - PRPlayingTypeContinue: 连读
- - PRPlayingTypeEvaluate: 评测（跟读）
+ - PRPlayingTypeEvaluate: 评测
  - PRPlayingTypeRepeat: 复读
  */
 typedef NS_ENUM(NSUInteger, PRPlayingType) {
