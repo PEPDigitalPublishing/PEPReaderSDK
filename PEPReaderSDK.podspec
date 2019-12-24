@@ -34,6 +34,9 @@ Pod::Spec.new do |s|
 #   s.dependency 'PEPBigData', :git => 'https://github.com/PEPDigitalPublishing/PEPBigData.git'
 #   s.dependency 'PEPNetworking', :git => 'https://github.com/PEPDigitalPublishing/PEPNetworking.git'
 
+   s.dependency 'PEPBigData', '~>0.3.5'
+   s.dependency 'PEPNetworking', '~>0.4.1'
+
 #  此处为讯飞语音SDK，可以不从该地址下载，但是必须保证项目中存在iflyMSC.framework
 #  s.dependency 'PEPiFlyMSC', :git => 'https://github.com/PEPDigitalPublishing/PEPiFlyMSC.git'
 
