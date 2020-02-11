@@ -116,6 +116,17 @@
 
 - (instancetype)initWithBookID:(NSString *)bookID;
 
+/**
+绕过教材鉴权初始化方法。
+该方法内部不进行教材授权校验，直接以已购买状态打开教材。仅用于线上紧急处理已购买用户仍提示需购买的情况，正常情况下请勿调用此方法，内部会进行AppKey校验，需双方许可后开放该方法调用。
+对于不符合该接口调用条件的（AppKey匹配且有userID存在），内部将会调用「initWithBookID:(NSString *)bookID pageIndex:(NSInteger)pageIndex purchase:(BOOL)purchase」方法进行初始化
+ 
+@param bookID 教材ID
+@param pageIndex 需要跳转的页码: 传0时阅读器将会自动根据记录的阅读进度进行跳转(仅已购买教材会记录阅读进度)
+@return return value description
+*/
+- (instancetype)initBreakWithBookID:(NSString *)bookID pageIndex:(NSInteger)pageIndex;
+
 
 // MARK: - Public Method
 
