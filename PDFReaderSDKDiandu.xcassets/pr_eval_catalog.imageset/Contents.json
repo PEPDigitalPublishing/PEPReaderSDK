@@ -1,22 +1,33 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
+      "filename" : "ml_ 1.png",
+      "idiom" : "iphone",
       "scale" : "1x"
     },
     {
-      "idiom" : "universal",
-      "filename" : "pr_eval_catalog@2x.png",
+      "filename" : "ml_ 1@2x.png",
+      "idiom" : "iphone",
       "scale" : "2x"
     },
     {
-      "idiom" : "universal",
-      "filename" : "pr_eval_catalog@3x.png",
+      "filename" : "ml_ 1@3x.png",
+      "idiom" : "iphone",
       "scale" : "3x"
+    },
+    {
+      "filename" : "pr_eval_catalog@2x.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "pr_eval_catalog@3x.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

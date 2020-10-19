@@ -21,6 +21,7 @@ typedef NS_ENUM(NSUInteger, PRBookAuth) {
 typedef NS_ENUM(NSUInteger, PREvaluateEngineType) {
     PREvaluateEngineTypeXunFei,             /// 默认讯飞引擎
     PREvaluateEngineTypeYiQi,               /// 一起作业语音引擎
+    PREvaluateEngineTypeOther               /// 其他测评引擎
 };
 
 
@@ -66,6 +67,12 @@ typedef NS_ENUM(NSUInteger, PRToolBarItemType) {
 };
 
 
+typedef NS_ENUM(NSUInteger, PRRecordOptionsType) {
+    PRRecordOptionsTypeSaveBetter   = 200,
+    PRRecordOptionsTypeSaveLast,
+};
+
+
 
 
 /**
@@ -74,6 +81,8 @@ typedef NS_ENUM(NSUInteger, PRToolBarItemType) {
  - PRSettingItemTypeSpeed: 语速调节
  - PRSettingItemTypeTranslate: 翻译显示开关
  - PRSettingItemTypeHotspot: 可点读热区显示开关
+ - PRSettingItemTypeReadingTimeCountdown：定时停止连续复读时间倒计时
+ - PRSettingItemTypeSaveScore：设置保留的成绩类型（最高/最新）
  - PRSettingItemTypeFeedback: 反馈(仅自营点读有此功能入口)
  - PRSettingItemTypeHelp: 帮助
  */
@@ -81,6 +90,8 @@ typedef NS_ENUM(NSUInteger, PRSettingItemType) {
     PRSettingItemTypeSpeed,
     PRSettingItemTypeTranslate,
     PRSettingItemTypeHotspot,
+//    PRSettingItemTypeReadingTimeCountdown,
+    PRSettingItemTypeSaveScore,
     PRSettingItemTypeFeedback,
     PRSettingItemTypeHelp,
 };

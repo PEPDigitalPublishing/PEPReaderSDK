@@ -39,7 +39,6 @@
  */
 + (void)setEvaluateEngineType:(PREvaluateEngineType)type;
 
-
 /**
  设置讯飞SDK的AppID。格式形如：appid=xxxxxx
  如果不设置或者传空，SDK内部将会设置默认的AppID。

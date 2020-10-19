@@ -22,7 +22,8 @@ FOUNDATION_EXPORT const unsigned char PDFReaderSDKDianduVersionString[];
 #import "PEPFileManager.h"
 #import "PRViewController.h"
 #import "PRStandardViewController.h"
-
+#import "PREvaluationEngine.h"
+#import "PREvaluateResult.h"
 
 
 

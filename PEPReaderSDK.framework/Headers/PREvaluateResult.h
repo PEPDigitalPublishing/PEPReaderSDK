@@ -24,8 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 /** 语音引擎识别出的内容 */
 @property (nonatomic, copy) NSString *usertext;
 
-
-
 /** 百分制分数 */
 @property (nonatomic, assign) CGFloat score;
 
@@ -35,10 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 /** ⽤户朗读结束时间，单位“秒” */
 @property (nonatomic, assign) CGFloat end;
 
-
 /** 句子的评测结果 */
 @property (nonatomic, strong) NSArray<PREvaluateSentenceResult *> *sentences;
-
 
 /** 状态码：0为正常 */
 @property (nonatomic, assign) NSInteger code;
@@ -57,7 +53,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 句子内容 */
 @property (nonatomic, copy) NSString *content;
-
 
 /** 百分制分数 */
 @property (nonatomic, assign) CGFloat score;
