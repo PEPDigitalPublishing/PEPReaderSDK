@@ -71,12 +71,6 @@ pod 'PEPReaderSDK', { :git => 'https://github.com/PEPDigitalPublishing/PEPReader
 
 ![Github_Watch](https://github.com/PEPDigitalPublishing/PEPImageHost/raw/master/PEPReaderSDK/github_watch.png)
 
-## 语音测评方面（预计10.14日更新）
-
-可使用自定义语音测评 （SDK中默认使用讯飞语音引擎）
-    [PRSDKManager setEvaluateEngineType:PREvaluateEngineTypeOther];
-    [ThirdSpeechEvaluatorTool shareInstance];// 初始化自定义测评引擎
-具体实现见Demo
 
 ## FAQ
 
