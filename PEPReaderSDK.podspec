@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
   s.summary      = '人教点读新SDK'
 
-  s.author       = { 'PEP' => 'lipz@pep.com.cn' }
+  s.author       = { 'PEP' => 'han_zero@163.com' }
 
   s.platform     =  :ios, '9.0'
 
