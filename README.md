@@ -139,8 +139,13 @@ done
 
 ![Run Script](https://github.com/PEPDigitalPublishing/PEPImageHost/raw/master/PEPReaderSDK/run_script.png)
 
+#### 4. 新版Xcode 12编译时报错"/Users/xxx.xcodeproj Building for iOS, but the linked and embedded framework 'FoxitRDK.framework' was built for iOS + iOS Simulator."
 
-#### 4. 正在完善中...
+操作如图：
+![Run Script](https://github.com/PEPDigitalPublishing/PEPImageHost/raw/master/PEPReaderSDK/Validate_Workspace.jpg)
+
+
+#### 5. 正在完善中...
 
 对接中出现的任何问题，欢迎随时反馈（hanhf@pep.com.cn），或者提[Issues](https://github.com/PEPDigitalPublishing/PEPReaderSDK/issues).
 
