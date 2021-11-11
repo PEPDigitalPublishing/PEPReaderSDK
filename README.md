@@ -1,6 +1,11 @@
 # PEPReaderSDK
 人教点读SDK新仓库
 
+### 更新记录
+
+时间 | 版本号 | 更新内容
+-|:-:|:-:
+2021-11-01   | v2.7.2 | 修复已知bug
 
 ## 系统要求
 
@@ -29,6 +34,8 @@ pod 'PEPReaderSDK', :git => 'https://github.com/PEPDigitalPublishing/PEPReaderSD
 pod 'PEPiFlyMSC', :git => 'https://github.com/PEPDigitalPublishing/PEPiFlyMSC.git'
 
 pod 'SSZipArchive'
+
+pod 'iosMath'
 
 ```
 
