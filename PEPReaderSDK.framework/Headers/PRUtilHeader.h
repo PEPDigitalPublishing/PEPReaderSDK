@@ -24,7 +24,11 @@ typedef NS_ENUM(NSUInteger, PREvaluateEngineType) {
     PREvaluateEngineTypeOther               /// 其他测评引擎
 };
 
-
+/** SDK类型 */
+typedef NS_ENUM(NSUInteger, PDFReaderSDKType) {
+    PDFReaderSDKTypeCommon,            //通用
+    PDFReaderSDKType_YFD,              //猿辅导
+};
 
 /**
  播放类型
@@ -41,7 +45,19 @@ typedef NS_ENUM(NSUInteger, PRPlayingType) {
     PRPlayingTypeRepeat,
 };
 
+/**
+ 播放类型(SDK用)
+ 
+ - PRYFDPlayingTypeDefault: 默认
+ - PRYFDPlayingTypeClick: 点读
+ - PRYFDPlayingTypeContinue: 连读
 
+ */
+typedef NS_ENUM(NSUInteger, PRYFDPlayingType) {
+    PRYFDPlayingTypeDefault,
+    PRYFDPlayingTypeClick,
+    PRYFDPlayingTypeContinue
+};
 
 /**
  工具栏按钮类型
@@ -54,6 +70,10 @@ typedef NS_ENUM(NSUInteger, PRPlayingType) {
  - PRToolBarItemTypeSetting: 设置
  - PRToolBarItemTypeKnowledge: 知识讲解
  - PRToolBarItemTypeSkip: 跳转（仅iPad有此项）
+ 
+ - PRToolBarItemTypeMathTarget:   数学教材专属--学习目标
+ - PRToolBarItemTypeSolution:   数学教材专属--习题解答
+ - PRToolBarItemTypeExplain:   数学教材专属--知识讲解
  */
 typedef NS_ENUM(NSUInteger, PRToolBarItemType) {
     PRToolBarItemTypeBack           = 1000,
@@ -64,6 +84,9 @@ typedef NS_ENUM(NSUInteger, PRToolBarItemType) {
     PRToolBarItemTypeSetting,
     PRToolBarItemTypeKnowledge,
     PRToolBarItemTypeSkip,
+    PRToolBarItemTypeMathTarget,
+    PRToolBarItemTypeMathSolution,
+    PRToolBarItemTypeMathExplain,
 };
 
 

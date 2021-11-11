@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <PEPNetworking/PEPNetworking.h>
+
+@class PEPDownloadOperation;
 
 @interface PRBookDownloader : NSObject
 

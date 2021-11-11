@@ -20,6 +20,14 @@ typedef NS_ENUM(NSUInteger, PRBookSubject) {
     PRBookSubjectMath           = 21,
     /// 音乐
     PRBookSubjectMusic          = 22,
+    /// 体育
+    PRBookSubjectSports          = 26,
+    /// 物理
+    PRBookSubjectPhysics          = 41,
+    /// 化学
+    PRBookSubjectChemistry          = 42,
+    /// 生物
+    PRBookSubjectBiology          = 43,
 };
 
 // MARK: - PRBookModel
@@ -93,6 +101,11 @@ typedef NS_ENUM(NSUInteger, PRBookSubject) {
 @property (nonatomic, assign) NSInteger total_words;
 
 
+/// 是否有错题本
+@property (nonatomic, assign) BOOL is_practice;
+
+/// 是否是新版资源
+@property (nonatomic, assign) BOOL catalog_version;
 
 
 // MARK: - Readonly

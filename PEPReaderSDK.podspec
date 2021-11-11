@@ -4,17 +4,17 @@ Pod::Spec.new do |s|
 
   s.name         = 'PEPReaderSDK'
 
-  s.version      = '2.7.0'
+  s.version      = '2.7.1'
 
   s.summary      = '人教点读新SDK'
 
   s.author       = { 'PEP' => 'han_zero@163.com' }
 
-  s.platform     =  :ios, '9.0'
+  s.platform     =  :ios, '10.0'
 
   s.homepage     = 'https://github.com/PEPDigitalPublishing/PEPReaderSDK'
 
-  s.source       = { :git => 'https://github.com/PEPDigitalPublishing/PEPReaderSDK.git', :tag => s.version }
+  s.source       = { :git => 'https://github.com/PEPDigitalPublishing/PEPReaderSDK.git'}
 
   s.vendored_frameworks = 'PEPReaderSDK.framework'
   
@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
   s.dependency 'YYModel'
   s.dependency 'Masonry'
   s.dependency 'SAMKeychain'
+  s.dependency 'iosMath'
 
 # SSZipArchive库为强依赖，此处经对接方项目特殊要求才注释掉
 #  s.dependency 'SSZipArchive'
@@ -42,6 +43,9 @@ Pod::Spec.new do |s|
 
 #  此处为一起作业语音SDK，仅提供给一起作业使用，其他对接方请勿使用此SDK
 #  s.dependency 'YIQISpeechEngine', :git => 'https://gitee.com/guxiong/YIQISpeechEngine.git'
+
+   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 
   s.requires_arc = true
