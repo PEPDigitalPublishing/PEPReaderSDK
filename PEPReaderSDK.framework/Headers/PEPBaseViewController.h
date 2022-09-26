@@ -65,7 +65,7 @@ typedef NS_ENUM(NSUInteger, PEPRequestDataStatus) {
 - (void)showLoadingView;
 
 /** progress: 0 ~ 1 */
-- (void)showLoadingViewProgress:(CGFloat)progress;
+- (void)showLoadingViewProgress:(CGFloat)progress speed:(NSString*)speedStr;
 
 - (void)showLoadingViewWithTitle:(NSString *)title;
 

@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+
 @class PEPDownloadOperation;
+@class RJRAnnot;
 
 @interface PRBookDownloader : NSObject
 
@@ -99,6 +101,13 @@
 + (BOOL)checkBookUpdateWithBookID:(NSString *)bookID error:(NSError **)error;
 
 
++(void)stopAllDownLoadTask;
+
++(void)preDownloadAudioRes:(RJRAnnot*)annot success:(void(^)(void))successBlock;
+/**
+ 获取下载队列中的所有下载实例
+ */
++ (NSArray<PEPDownloadOperation *> *)downloadedAudioResList;
 @end
 
 

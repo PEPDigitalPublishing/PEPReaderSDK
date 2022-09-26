@@ -96,6 +96,14 @@ typedef NS_ENUM(NSUInteger, PRRecordOptionsType) {
 };
 
 
+typedef NS_ENUM(NSUInteger, PRReaderCountDownOptionsType) {
+    PRReaderCountDownOptionsDefault   = 0,
+    PRReaderCountDownOptions10   = 10,
+    PRReaderCountDownOptions20   = 20,
+    PRReaderCountDownOptions30   = 30,
+    PRReaderCountDownOptions60   = 60
+};
+
 
 
 /**
@@ -113,7 +121,7 @@ typedef NS_ENUM(NSUInteger, PRSettingItemType) {
     PRSettingItemTypeSpeed,
     PRSettingItemTypeTranslate,
     PRSettingItemTypeHotspot,
-//    PRSettingItemTypeReadingTimeCountdown,
+    PRSettingItemTypeReadingTimeCountdown,
     PRSettingItemTypeSaveScore,
     PRSettingItemTypeFeedback,
     PRSettingItemTypeHelp,

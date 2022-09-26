@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @class PRFloatButton;
 @protocol PRFloatButtonDelegate <NSObject>
+@optional
 /** 点击悬浮球的回调 */
 - (void)PRFloatButtonClick:(PRFloatButton *)floatButton;
 @end

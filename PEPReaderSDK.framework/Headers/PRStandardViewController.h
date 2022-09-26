@@ -19,6 +19,6 @@
  */
 @property (nonatomic, copy) void(^toolBarItemDidSelected)(PRToolBarItemType type, BOOL selected);
 
-
+@property(nonatomic,strong)UIImage *lockpageImage;/**<  */
 
 @end

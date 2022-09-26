@@ -16,18 +16,78 @@ typedef NS_ENUM(NSUInteger, PRBookSubject) {
     PRBookSubjectChinese        = 11,
     /// 英语
     PRBookSubjectEnglish        = 12,
+    /// 俄语
+    PRBookSubjectRussian       = 13,
+    /// 日语
+    PRBookSubjectJapanese       = 14,
+    /// 德语
+    PRBookSubjectGerman       = 15,
+    /// 法语
+    PRBookSubjectFrench       = 16,
+    /// 其他外语
+    PRBookSubjectOtherLanguage       = 17,
+    /// 中国少数名族语
+    PRBookSubjectChinaOtherLanguage       = 18,
     /// 数学
     PRBookSubjectMath           = 21,
-    /// 音乐
-    PRBookSubjectMusic          = 22,
-    /// 体育
-    PRBookSubjectSports          = 26,
+    /// 政治
+    PRBookSubjectPolitics           = 31,
+    /// 思想品德
+    PRBookSubjectCharacter           = 32,
+    /// 品德与生活
+    PRBookSubjectMoralsAndLife          = 33,
+    /// 品德与社会
+    PRBookSubjectMoralsAndSociology          = 34,
+    /// 社会
+    PRBookSubjectSociology          = 35,
+    /// 历史与社会
+    PRBookSubjectHistoryAndSociology          = 36,
+    /// 历史
+    PRBookSubjectHistory        = 37,
+    /// 地理
+    PRBookSubjectGeography        = 38,
+    /// 自然科学
+    PRBookSubjectNaturalScience        = 40,
     /// 物理
     PRBookSubjectPhysics          = 41,
     /// 化学
     PRBookSubjectChemistry          = 42,
     /// 生物
     PRBookSubjectBiology          = 43,
+    /// 科学
+    PRBookSubjectScience          = 44,
+    /// 科学与技术
+    PRBookSubjectScienceAndTechnology         = 49,
+    /// 劳动与技术教育
+    PRBookSubjectLabourAndTechnologyEducation         = 51,
+    /// 信息技术教育
+    PRBookSubjectInformationTechnologyEducation         = 52,
+    /// 职业教育
+    PRBookSubjectVocationalEducation         = 53,
+    /// 通用技术教育
+    PRBookSubjectGeneralTechnologyEducation         = 54,
+    /// 艺术
+    PRBookSubjectArt          = 61,
+    /// 音乐
+    PRBookSubjectMusic          = 62,
+    /// 美术
+    PRBookSubjectFineArts          = 63,
+    /// 体育
+    PRBookSubjectSports          = 71,
+    /// 体育与健康
+    PRBookSubjectSportsAndHealth          = 72,
+    /// 综合实践活动
+    PRBookSubjectIntegratedPracticeActivity          = 81,
+    /// 研究性学习
+    PRBookSubjectInquiryLearning          = 82,
+    /// 社区服务与社会实践
+    PRBookSubjectSocialPractice          = 83,
+    /// 道德与法治
+    PRBookSubjectMoralsAndRuleByLaw          = 84,
+    /// 生命科学
+    PRBookSubjectLifeSciences          = 85,
+    /// 其他课程
+    PRBookSubjectOtherCourses          = 91,
 };
 
 // MARK: - PRBookModel
