@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   s.name         = 'PEPReaderSDK'
 
-  s.version      = '2.7.3'
+  s.version      = '2.7.4'
 
   s.summary      = '人教点读新SDK'
 
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
 
    s.dependency 'PEPBigData', '>= 0.4.4'
    s.dependency 'PEPNetworking', '>= 0.4.1'
-
+   s.dependency 'MZTimerLabel'
 #  此处为讯飞语音SDK，可以不从该地址下载，但是必须保证项目中存在iflyMSC.framework
 #  s.dependency 'PEPiFlyMSC', :git => 'https://github.com/PEPDigitalPublishing/PEPiFlyMSC.git'
 
