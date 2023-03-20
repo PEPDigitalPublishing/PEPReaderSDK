@@ -42,6 +42,35 @@ NS_ASSUME_NONNULL_BEGIN
 /** 错误信息 */
 @property (nonatomic, copy) NSString *message;
 
+/**
+ 完整度分
+ */
+@property (nonatomic, assign) float integrity_score;
+
+/**
+ 流畅度分
+ */
+
+@property (nonatomic, assign) float fluency_score;
+
+/**
+ 准确度分 只有英文有准确度
+ */
+
+@property (nonatomic, assign) float accuracy_score;
+
+/**
+ 声韵分 中文用此字段代替准确度分 指声母和韵母正确率的得分
+ */
+
+@property (nonatomic, assign) float phone_score;
+
+/**
+ 调型分 指声调正确率的得分
+ */
+
+@property (nonatomic, assign) float tone_score;
+
 
 @end
 

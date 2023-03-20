@@ -124,6 +124,7 @@ typedef NS_ENUM(NSUInteger, PRSettingItemType) {
     PRSettingItemTypeReadingTimeCountdown,
     PRSettingItemTypeSaveScore,
     PRSettingItemTypeFeedback,
+    PRSettingItemTypeShare,
     PRSettingItemTypeHelp,
 };
 

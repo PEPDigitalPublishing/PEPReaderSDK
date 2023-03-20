@@ -125,6 +125,10 @@ typedef NS_ENUM(NSUInteger, PREvaluationEngineCategory) {
 /** 本地录音文件地址 */
 - (void)offlinePath:(NSString *)path;
 
+
+//合成播放进度
+- (void)onSpeakProgress:(int)progress beginPos:(int)beginPos endPos:(int)endPos;
+
 @end
 
 
@@ -154,6 +158,7 @@ typedef NS_ENUM(NSUInteger, PREvaluationEngineCategory) {
 
 + (instancetype)shareInstance;
 
+-(void)cleanIFlySetting;
 
 + (NSString *)translatePhoneticNotationWithString:(NSString *)string;
 
@@ -168,6 +173,14 @@ typedef NS_ENUM(NSUInteger, PREvaluationEngineCategory) {
 
 /** 取消录音 */
 - (void)cancelRecord;
+
+/** 开始语音合成*/
+- (void)startSpeakingWithText:(NSString *)text;
+
+/**
+ 停止语音合成
+ */
+- (void)stopSpeaking;
 
 
 @end

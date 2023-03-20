@@ -13,7 +13,7 @@
 #import "PRWordInfoManager.h"
 
 @class RJRFileManager, PRViewController;
-
+FOUNDATION_EXPORT NSNotificationName const PRTextBookShareNotification;
 // MARK: - PRViewControllerDelegate
 
 @protocol PRViewControllerDelegate<NSObject>
@@ -58,6 +58,12 @@
  阅读器已经关闭后将回调该代理方法：dealloc
  */
 - (void)readerDidClosed;
+
+/**
+ 自定义悬浮窗点击回调
+ */
+- (void)customizeFloatButtonClick;
+
 
 @end
 
@@ -116,6 +122,11 @@
 
 - (instancetype)initWithBookID:(NSString *)bookID;
 
+
+/// 设置悬浮按钮
+/// @param image image
+/// @param frame 初始位置-可拖动
+-(void)configFloatButtonWithImage:(UIImage *)image frame:(CGRect)frame;
 /**
 绕过教材鉴权初始化方法。
 该方法内部不进行教材授权校验，直接以已购买状态打开教材。仅用于线上紧急处理已购买用户仍提示需购买的情况，正常情况下请勿调用此方法，内部会进行AppKey校验，需双方许可后开放该方法调用。

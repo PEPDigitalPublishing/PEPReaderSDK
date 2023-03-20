@@ -72,7 +72,7 @@
  
  @param userID 对接平台用户ID
  @param successBlock 网络请求成功后回调的block（包括当前用户购买过的书本和绑定的设备列表）
- @param failBlock 网络请求失败后回调的block
+ @param failBlock 网络请求失败后回调的block ,如果返回 【Code=118或者119 即授权失败】请联系点读SDK负责人
  */
 + (void)userAuthWithUserID:(NSString *)userID
               successBlock:(void(^)(id response))successBlock
