@@ -4,11 +4,11 @@ Pod::Spec.new do |s|
 
   s.name         = 'PEPReaderSDK'
 
-  s.version      = '2.8.0'
+  s.version      = '2.8.1'
 
   s.summary      = '人教点读新SDK'
 
-  s.author       = { 'PEP' => 'han_zero@163.com' }
+  s.author       = { 'PEP' => 'hans@pep.com.cn' }
 
   s.platform     =  :ios, '10.0'
 
