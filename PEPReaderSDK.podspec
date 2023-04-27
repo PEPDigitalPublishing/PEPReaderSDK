@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   s.name         = 'PEPReaderSDK'
 
-  s.version      = '2.8.1'
+  s.version      = '2.8.2'
 
   s.summary      = '人教点读新SDK'
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   
   s.static_framework = true
 
-  s.resource = 'PDFReaderSDKDiandu.xcassets'
+  s.resource = 'PDFReaderSDKDiandu.xcassets', 'PEPPDFReaderSDK.bundle'
 
   s.frameworks   = 'MobileCoreServices', 'Security', 'CoreTelephony', 'AudioToolbox', 'CoreGraphics', 'QuartzCore', 'SystemConfiguration', 'AddressBook', 'CoreLocation'
 
