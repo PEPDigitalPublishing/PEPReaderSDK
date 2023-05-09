@@ -130,6 +130,12 @@ typedef NS_ENUM(NSUInteger, PRVoiceEvaluateNavigationType) {
 
 - (void)loadCustomNavigationViewWithType:(PRVoiceEvaluateNavigationType)type;
 
+/**
+ 语音测评-导航条自定义返回按钮设置返回图片 图片大小24*24  / 36*36 如果设置自定义图片，此方法在loadCustomNavigationViewWithType方法之前调用
+ */
+
+- (void)configNavigationCustomBackButtonWithImage:(UIImage *)image;
+
 @end
 
 
