@@ -10,6 +10,7 @@
 2023-03-20   | v2.8.1 | 修复已知bug
 2023-04-27   | v2.8.2 | 修复已知bug
 2023-05-09   | v2.8.3 | 评测模块优化,修复已知bug
+2023-06-08   | v2.8.4 | 升级福昕SDK到7.4.0版本
 
 ## 系统要求
 
@@ -18,7 +19,7 @@
 
 ## 使用说明
 
-由于人教点读SDK依赖的福昕RDK文件较大，无法上传GitHub，可以[点击这里](https://rjszgsres.mypep.cn/rjdd/iOSFoxitRDK/FoxitRDK.framework.zip)下载（目前已是7.3版本），然后将解压出的`FoxitRDK.framework`导入到项目中。
+由于人教点读SDK依赖的福昕RDK文件较大，无法上传GitHub，可以[点击这里](https://rjszgsres.mypep.cn/rjdd/iOSFoxitRDK/FoxitRDK.framework.zip)下载（目前已是7.4版本），然后将解压出的`FoxitRDK.framework`导入到项目中。
 
 
 ### 接入
