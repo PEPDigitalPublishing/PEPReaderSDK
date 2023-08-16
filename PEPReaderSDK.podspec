@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   
   s.static_framework = true
 
-  s.resource = 'PDFReaderSDKDiandu.xcassets', 'PEPPDFReaderSDK.bundle'
+  s.resource = ['PDFReaderSDKDiandu.xcassets', 'PEPPDFReaderSDK.bundle']
 
   s.frameworks   = 'MobileCoreServices', 'Security', 'CoreTelephony', 'AudioToolbox', 'CoreGraphics', 'QuartzCore', 'SystemConfiguration', 'AddressBook', 'CoreLocation'
 
