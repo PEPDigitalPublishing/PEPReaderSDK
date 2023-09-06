@@ -12,6 +12,14 @@
 #import "PRBookModel.h"
 #import "PRWordInfoManager.h"
 
+
+/**
+ ★★★评测列表中点击非免费内容通知--- 对接方需要自己定制体验模式结束、引导用户购买的弹窗
+ 通知名称  KPREVALUATE_NOACCESS
+ 返回评测列表控制器(NSDictionary形式)  notification.userInfo
+ {@"viewcontroller": <PREvaluateListController>, @"bookModel": <PRBookModel>}
+ */
+
 @class RJRFileManager, PRViewController;
 FOUNDATION_EXPORT NSNotificationName const PRTextBookShareNotification;
 // MARK: - PRViewControllerDelegate
