@@ -35,8 +35,8 @@
 /** 录音文件目录 */
 @property (nonatomic, copy, readonly) NSString *recordDir;
 
-
-
+/** 古诗词文件目录 */
+@property (nonatomic, copy, readonly) NSString *poetryDir;
 
 
 // MARK: - Methods
