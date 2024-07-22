@@ -66,6 +66,8 @@ typedef NS_ENUM(NSUInteger, PRVoiceEvaluateNavigationType) {
 
 @property (nonatomic, strong) UIView *loadingView;
 
+@property (nonatomic, strong) UIView *animationLoadingView;
+
 /**
  请求数据方法：基类不做具体实现，建议每个子类需要请求数据时分别实现该方法，以便别处可通过基类调用该方法以刷新数据和页面
  */
@@ -78,6 +80,8 @@ typedef NS_ENUM(NSUInteger, PRVoiceEvaluateNavigationType) {
 
 - (void)showLoadingViewWithTitle:(NSString *)title;
 
+- (void)showAnimationLoadingViewProgress:(CGFloat)progress;
+- (void)hideAnimationLoadingView;
 
 - (void)hideLoadingView;
 
@@ -107,9 +111,13 @@ typedef NS_ENUM(NSUInteger, PRVoiceEvaluateNavigationType) {
 
 @property (nonatomic, strong) UIVisualEffectView *coverView;
 
-@property (nonatomic, copy) void(^coverViewClicked)(void);
+@property (nonatomic, strong) UIVisualEffectView *blackCoverView;
 
+@property (nonatomic, copy) void(^coverViewClicked)(void);
+@property (nonatomic, copy) void(^blackCoverViewClicked)(void);
 - (void)showCoverView;
+- (void)showBlockCoverView;
+-(void)hideBlackCoverView;
 
 - (void)hideCoverView;
 

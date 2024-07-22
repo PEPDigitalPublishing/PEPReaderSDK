@@ -26,4 +26,6 @@
 
 + (BOOL)fileCopyAtPath:(NSString *)atPath toPath:(NSString *)toPath;
 
++ (int)fileSize:(NSString *)filePath;
+
 @end
