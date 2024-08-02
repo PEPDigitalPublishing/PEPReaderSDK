@@ -38,18 +38,14 @@
 在`podfile`中添加如下代码，然后`pod install`:
 
 ```
-pod 'PEPNetworking', :git => 'https://github.com/PEPDigitalPublishing/PEPNetworking.git'
-
-pod 'PEPBigData', :git => 'https://github.com/PEPDigitalPublishing/PEPBigData.git'
-
 pod 'PEPReaderSDK', :git => 'https://github.com/PEPDigitalPublishing/PEPReaderSDK.git'
+
+pod 'FLAnimatedImage', '~> 1.0'
 
 # 讯飞语音SDK
 pod 'PEPiFlyMSC', :git => 'https://github.com/PEPDigitalPublishing/PEPiFlyMSC.git'
 
 pod 'SSZipArchive'
-
-pod 'iosMath'
 
 ```
 
