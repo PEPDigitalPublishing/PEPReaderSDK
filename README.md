@@ -164,6 +164,6 @@ done
 
 #### 5. 正在完善中...
 
-对接中出现的任何问题，欢迎随时反馈（hanhf@pep.com.cn），或者提[Issues](https://github.com/PEPDigitalPublishing/PEPReaderSDK/issues).
+对接中出现的任何问题，欢迎随时反馈
 
 
